@@ -77,3 +77,26 @@ header ul #contact a:hover{
 .body-content p{
     font-size: 20px;
 }
+
+.cart{
+    position: fixed;
+    right: 80px;
+    bottom: 80px;
+}
+
+.cart a{
+    color: white;
+    float: right;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgb(86, 39, 86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.cart a:hover{
+    background-color: rgb(144, 113, 118);
+}
