@@ -100,3 +100,41 @@ header ul #contact a:hover{
 .cart a:hover{
     background-color: rgb(144, 113, 118);
 }
+
+.search-box{
+    position: absolute;
+    background-color: none;
+    transform: translate;
+    top: 600px;
+    height: 40px;
+    border: solid;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-button{
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(86, 39, 86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+.search-button:hover{
+    background-color: rgb(144, 113, 118);
+}
+
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: black;
+    font-size: 20px;
+    line-height: 40px;
+    width: 530px;
+}
