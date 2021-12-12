@@ -164,15 +164,100 @@ header ul #contact a:hover{
     padding-top: 50px;
     text-align: center;
     background-color: rgba(150, 147, 141, 0.079);
+    align-content: center;
+    justify-content: center;
 }
 
+
 .col-4{
+    background-color: #f1f1f1;
     flex-basis: 25%;
-    padding: 10px;
+    padding: 20px;
+    padding-top: 120px;
+    padding-bottom: 40px;
     min-width: 200px;
-    margin-bottom: 50px;
+    height: auto;
+    margin: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.padding-fix1{
+    padding-top: 108px;
+}
+
+.padding-fix2{
+    padding-top: 124px;
 }
 
 .col-4 img{
     width: 250px;
+}
+
+.row1-first{
+    padding-top: 163px;
+}
+
+.row2-first{
+    padding-top: 148px;
+}
+
+.row1, .row2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.add-cart{
+    margin-top: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.add-cart:hover{
+    cursor: pointer;
+}
+
+.add-cart p{
+    font-size: 18px;
+}
+
+.popup-des {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+  
+.popup-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 60%;
+    font-size: 30px;
+    color: white;
+}
+  
+.check{
+    height: 150px;
+    width: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
