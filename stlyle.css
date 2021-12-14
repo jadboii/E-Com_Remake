@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(229, 225, 217);
     margin: 0;
     height: 100%;
     overflow-x: hidden;
@@ -62,7 +62,7 @@ header ul #contact a{
 }
 
 header ul #contact a:hover{
-   background-color: rgb(225, 222, 222);
+   background-color: rgb(144, 113, 118);
 }
 
 .active{
@@ -163,9 +163,9 @@ header ul #contact a:hover{
     padding-left: 25px;
     padding-top: 50px;
     text-align: center;
-    background-color: rgba(150, 147, 141, 0.079);
     align-content: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 
@@ -190,6 +190,18 @@ header ul #contact a:hover{
     padding-top: 124px;
 }
 
+.padding-fix3{
+    padding-top: 90px;
+}
+
+.padding-fix4{
+    padding-top: 101px;
+}
+
+.padding-fix5{
+    padding-top: 115px;
+}
+
 .col-4 img{
     width: 250px;
 }
@@ -203,8 +215,10 @@ header ul #contact a:hover{
 }
 
 .row3-first{
-    padding-bottom: 300px;
+    padding-top: 92px;
 }
+
+
 .row1, .row2, .row3, .row4{
     display: flex;
     justify-content: center;
@@ -247,7 +261,7 @@ header ul #contact a:hover{
     color: white;
 }
   
-.check{
+.popup-check{
     height: 150px;
     width: auto;
 }
@@ -417,7 +431,7 @@ header ul #contact a:hover{
     margin-left: 68px;
 }
 
-.footer{
+.cart-footer{
     height: 80px;
     width: 100%;
     position: fixed;
@@ -477,6 +491,8 @@ header ul #contact a:hover{
     padding: 60px 0 20px;
     display: flex;
     height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer p{
@@ -494,11 +510,16 @@ header ul #contact a:hover{
     min-width: 250px;
     margin-bottom: 20px;
     display: inline-block;
-    
+    margin-left: 80px;
 }
 
 .footer-col-1{
     flex-basis:30px;
+    margin-left: 20px;
+}
+
+.footer-col-1 p{
+    text-align: center;
 }
 
 .footer-col-2{
@@ -511,9 +532,15 @@ header ul #contact a:hover{
     margin-bottom: 10px;
 }
 
-.footer-col-3, .footer-col-4{
-    flex-basis: 12%;
+
+.footer-col-3 h3{
     text-align: center;
+    padding-left: 39px;
+}
+
+.footer-col-4 h3{
+    text-align: center;
+    padding-left: 39px;
 }
 
 ul{
@@ -530,10 +557,10 @@ ul{
 .copyright{
     text-align: center;
 }
+
 .contact-us{
     box-sizing: border-box;
     min-height: 100vh;
-    background: rgb(244, 244, 244);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -684,3 +711,109 @@ ul{
         margin-left: 0;
     }
 }
+
+.about{
+    height: 100vh;
+    width: 500px;
+    margin-left: 410px;
+}
+
+.about h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.about p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.ribbon-highlight{
+    position:relative;
+    margin:0.1em;
+  }
+  .ribbon-highlight:before{
+    content:"";
+    z-index:-1;
+    left:-0.5em;
+    top:0.1em;
+    border-width:0.5em;
+    border-style:solid;
+    border-color:rgb(180, 114, 180);
+    position:absolute;
+    width:100%;
+    border-left-color:transparent;
+    border-right-color:transparent;
+  }
+
+  .circle-sketch-highlight{
+    position:relative;
+  }
+  .circle-sketch-highlight:before{
+    content:"";
+    z-index:-1;
+    left:-0.5em;
+    top:-0.1em;
+    border-width:2px;
+    border-style:solid;
+    border-color:red;
+    position:absolute;
+    border-right-color:transparent;
+    width:100%;
+    height:1em;
+    transform:rotate(2deg);
+    opacity:0.7;
+    border-radius:50%;
+    padding:0.1em 0.25em;
+  }
+  .circle-sketch-highlight:after{
+    content:"";
+    z-index:-1;
+    left:-0.5em;
+    top:0.1em;
+    padding:0em 0.23em;
+    border-width:2px;
+    border-style:solid;
+    border-color:red;
+    border-left-color:transparent;
+    border-top-color:transparent;
+    position:absolute;
+    width:100%;
+    height:1em;
+    transform:rotate(-1deg);
+    opacity:0.7;
+    border-radius:50%;
+  }
+
+  .arrow-highlight{
+    position:relative;
+    margin:0 0.5em;
+    padding:0 0.2em;
+  }
+  .arrow-highlight:before{
+    content:"";
+    z-index:-1;
+    left:-0.5em;
+    top:0.1em;
+    border-width:0.5em;
+    border-style:solid;
+    border-color:orange;
+    position:absolute;
+    width:calc(100% - 0.5em);
+    border-left-color:transparent;
+  }
+  .arrow-highlight:after{
+    content:"";
+    z-index:-1;
+    right:0;
+    top:0.1em;
+    border-width:0.5em;
+    border-style:solid;
+    border-color:orange;
+    position:absolute;
+    border-top-color:transparent;
+    border-bottom-color:transparent;
+    border-left-color:transparent;
+    transform:rotate(180deg);
+    transform-origin:center right;
+  }
