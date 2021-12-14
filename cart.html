@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Store</title>
+    <script src="https://kit.fontawesome.com/9d1fbc2570.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stlyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ul>
+            <li> <img src="images/DS logo2.png" alt="logo"></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">OUR PRODUCTS</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li id="contact"><a href=""><i class="fas fa-envelope"></i></a></li>
+        </ul>
+    </header>
+
+    <div class="cart-header">
+        <div class="prod-div">
+            <p>Product</p>
+        </div>
+        <div class="other-div">
+            <p>Price Size Quantity Total</p>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <div class="cart-image">
+            <img src="images/shoes/ad-ss_fix.png" alt="item">
+        </div>
+        <div class="info">
+            <div class="price">
+                <p>₱4,800.00</p>
+            </div>
+            <div class="size">
+                <label for="size">Size(US):</label>
+                    <select name="size" id="size">
+                    <option value="7">7</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    </select>
+            </div>
+            <div class="counter">
+                <button onclick="decrement()">-</button>
+                <input id=counter-input type=number min=0 max=10 value="1">
+                <button onclick="increment()">+</button>
+            </div>
+            <div class="total">
+                <p>₱4,800.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <div class="cart-image">
+            <img src="images/shoes/vns-os.png" alt="item">
+        </div>
+        <div class="info">
+            <div class="price">
+                <p>₱3,298.00</p>
+            </div>
+            <div class="size">
+                <label for="size">Size(US):</label>
+                    <select name="size" id="size">
+                    <option value="7">7</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    </select>
+            </div>
+            <div class="counter">
+                <button onclick="decrement1()">-</button>
+                <input id=counter-input1 type=number min=0 max=10 value="1">
+                <button onclick="increment1()">+</button>
+            </div>
+            <div class="total">
+                <p>₱3,298.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <div class="cart-image">
+            <img src="images/shoes/aj1-ow.png" alt="item">
+        </div>
+        <div class="info">
+            <div class="price">
+                <p>₱9,581.32</p>
+            </div>
+            <div class="size">
+                <label for="size">Size(US):</label>
+                    <select name="size" id="size">
+                    <option value="7">7</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    </select>
+            </div>
+            <div class="counter">
+                <button onclick="decrement2()">-</button>
+                <input id=counter-input2 type=number min=0 max=10 value="1">
+                <button onclick="increment2()">+</button>
+            </div>
+            <div class="total">
+                <p>₱9,581.32</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <div class="cart-image">
+            <img src="images/shoes/af1-ts.png" alt="item">
+        </div>
+        <div class="info">
+            <div class="price">
+                <p>₱8,068.48</p>
+            </div>
+            <div class="size">
+                <label for="size">Size(US):</label>
+                    <select name="size" id="size">
+                    <option value="7">7</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    </select>
+            </div>
+            <div class="counter">
+                <button onclick="decrement3()">-</button>
+                <input id=counter-input3 type=number min=0 max=10 value="1">
+                <button onclick="increment3()">+</button>
+            </div>
+            <div class="total">
+                <p>₱8,068.48</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-container cart-last">
+        <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <div class="cart-image">
+            <img src="images/shoes/r-lscc8.png" alt="item">
+        </div>
+        <div class="info">
+            <div class="price">
+                <p>₱3,766.80</p>
+            </div>
+            <div class="size">
+                <label for="size">Size(US):</label>
+                    <select name="size" id="size">
+                    <option value="7">7</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                    </select>
+            </div>
+            <div class="counter">
+                <button onclick="decrement4()">-</button>
+                <input id=counter-input4 type=number min=0 max=10 value="1">
+                <button onclick="increment4()">+</button>
+            </div>
+            <div class="total">
+                <p>₱3,766.80</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="for-space">
+    </div>
+    
+    <div class="footer">
+        <div class="total-footer">
+            <p>Total: ₱69,420.00</p>
+        </div>
+        <div class="checkout">
+            <p>Check Out</p>
+        </div>
+    </div>
+
+
+<script src="Script.js" type="text/javascript">
+</script>
+</body>
+</html>
+    
