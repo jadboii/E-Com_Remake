@@ -1,8 +1,3 @@
-function addToCartAlert() {
-    alert("One item added to cart");
-}
-
-
 var popup = document.getElementById("popup");
 var btn = document.getElementById("button");
 var btn1 = document.getElementById("button1");
@@ -45,3 +40,38 @@ window.onclick = function(event) {
     popup.style.display = "none";
   }
 }
+
+function increment() {
+    document.getElementById('counter-input').stepUp();
+ }
+ function decrement() {
+    document.getElementById('counter-input').stepDown();
+ }
+
+ function increment1() {
+    document.getElementById('counter-input1').stepUp();
+ }
+ function decrement1() {
+    document.getElementById('counter-input1').stepDown();
+ }
+ 
+ function increment2() {
+    document.getElementById('counter-input2').stepUp();
+ }
+ function decrement2() {
+    document.getElementById('counter-input2').stepDown();
+ }
+
+ function increment3() {
+    document.getElementById('counter-input3').stepUp();
+ }
+ function decrement3() {
+    document.getElementById('counter-input3').stepDown();
+ }
+
+ function increment4() {
+    document.getElementById('counter-input4').stepUp();
+ }
+ function decrement4() {
+    document.getElementById('counter-input4').stepDown();
+ }
