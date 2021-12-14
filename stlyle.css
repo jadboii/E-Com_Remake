@@ -265,6 +265,209 @@ header ul #contact a:hover{
     cursor: pointer;
 }
 
+/* cart page */
+
+.cart-container{
+    background: white;
+    height: 150px;
+    width: 80%;
+    margin: 2% 10%;
+}
+
+.cart-header{
+    background: white;
+    height: 50px;
+    width: 80%;
+    margin: 2% 10%;
+}
+
+.prod-div{
+    float: left;
+    text-align: center;
+    margin-left: 140px;
+    letter-spacing: 1px;
+}
+
+.other-div{
+    float: right;
+}
+
+.other-div p{
+    word-spacing: 130px;
+    margin-right: 50px;
+    letter-spacing: 1px;
+}
+
+.cart-image{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin: 20px;
+    margin-left: 60px;
+}
+
+.cart-image img{
+    height: 100px;
+    width: auto;
+}
+
+.check{
+    float: left;
+    margin-top: 6%;
+    margin-left: 20px;
+    height: 30px;
+    width: auto;
+}
+
+.check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 0.2px solid gainsboro;
+}
+
+.check:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+.check input:checked ~ .checkmark {
+    background-color: rgb(144, 113, 118);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.check .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.counter{
+    height: 20px;
+    width: auto;
+    float: left;
+    margin-top: 9%;
+    margin-left: 70px;
+}
+
+.counter input{
+    height: 30px;
+    font-size: 20px;
+    padding-left: 22px;
+    width: 30px;
+}
+
+.counter button{
+    height: 35px;
+    width: 30px;
+}
+
+.info{
+    height: 150px;
+    width: 600px;
+    justify-content: center;
+    align-content: center;
+    float: right;
+}
+
+.price{
+    float: left;
+    height: 20px;
+    width: auto;
+    margin-top: 8%;
+    margin-left: 10px;
+}
+
+.size{
+    float: left;
+    height: 20px;
+    width: auto;
+    margin-top: 10%;
+    margin-left: 100px;
+}
+
+.total{
+    float: left;
+    height: 20px;
+    width: auto;
+    margin-top: 8%;
+    margin-left: 68px;
+}
+
+.footer{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    box-shadow: 0px -5px 3px rgb(238, 232, 232);
+}
+
+.total-footer{
+    position: absolute;
+    top: 10px;
+    right: 260px;
+    font-size: 20px;
+}
+
+.checkout{
+    position: relative;
+    float: right;
+    height: 40px;
+    width: 100px;
+    border: 1px solid rgb(86, 39, 86);
+    border-radius: 6px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: 1.5%;
+    margin-right: 150px;
+    background-color: rgb(86, 39, 86);
+}
+
+.checkout p{
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 6px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.checkout:hover{
+    cursor: pointer;
+}
+
+.for-space{
+    position: relative;
+    height: 80px;
+    width: auto;
+}
+
 /*---footer---*/
 
 .footer{
