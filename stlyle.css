@@ -543,6 +543,25 @@ header ul #contact a:hover{
     padding-left: 39px;
 }
 
+.footer-col-3 li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-col-3 li a:hover{
+    color: rgb(121, 186, 121);
+}
+
+.footer-col-4 li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-col-4 li a:hover{
+    color: rgb(121, 186, 121);
+
 ul{
     list-style-type: none ;
 }
