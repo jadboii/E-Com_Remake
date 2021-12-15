@@ -282,14 +282,14 @@ header ul #contact a:hover{
 /* cart page */
 
 .cart-container{
-    background: white;
+    background: whitesmoke;
     height: 150px;
     width: 80%;
     margin: 2% 10%;
 }
 
 .cart-header{
-    background: white;
+    background: whitesmoke;
     height: 50px;
     width: 80%;
     margin: 2% 10%;
